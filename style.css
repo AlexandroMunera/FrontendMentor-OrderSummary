@@ -1,0 +1,124 @@
+body {
+  font-size: 16px;
+  font-family: "Red Hat Display", sans-serif;
+  color: #7280a7;
+  display: -ms-grid;
+  display: grid;
+  place-items: center;
+  min-height: 100vh;
+  margin: 0;
+  background-color: #e0e8ff;
+  background-image: url("./images/pattern-background-desktop.svg");
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+@media (max-width: 375px) {
+  body {
+    background-image: url("./images/pattern-background-mobile.svg");
+  }
+}
+
+.card {
+  max-width: 345px;
+  border-radius: 1.5rem;
+  overflow: hidden;
+  background-color: #f5f7ff;
+}
+
+.card__image {
+  width: 100%;
+}
+
+.card__body {
+  padding: 0 2.5rem;
+  text-align: center;
+  margin-bottom: 1rem;
+}
+
+.card__title {
+  color: #1f2f56;
+  font-weight: 900;
+}
+
+.card__descri {
+  line-height: 25px;
+}
+
+.card__plan {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-top: 2rem;
+}
+
+.card__plan-section {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  gap: 1rem;
+}
+
+.card__plan-title {
+  margin: 0;
+  color: #1f2f56;
+}
+
+.card__plan-change {
+  color: #3829e0;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.card__plan-change:hover {
+  text-decoration: none;
+  opacity: 0.8;
+}
+
+.card__footer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding: 1.5rem;
+  text-align: center;
+  gap: 1.3rem;
+  font-weight: 600;
+  margin-bottom: .8rem;
+}
+
+.card__proceed-button {
+  background-color: #3829e0;
+  color: #f5f7ff;
+  border: none;
+  border-radius: 10px;
+  padding: 1rem;
+  font-weight: 900;
+  font-size: 0.9rem;
+  cursor: pointer;
+}
+
+.card__proceed-button:hover {
+  opacity: 0.8;
+}
+
+.card__cancel-button {
+  cursor: pointer;
+}
+
+.card__cancel-button:hover {
+  color: #1f2f56;
+}
+/*# sourceMappingURL=style.css.map */
